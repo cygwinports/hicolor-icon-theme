@@ -1,0 +1,18 @@
+NAME="hicolor-icon-theme"
+VERSION=0.12
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Default fallback icon theme"
+DESCRIPTION="This is the default fallback theme used by implementations of
+the icon theme specification."
+HOMEPAGE="http://icon-theme.freedesktop.org/wiki/HicolorTheme"
+SRC_URI="http://icon-theme.freedesktop.org/releases/${NAME}-${VERSION}.tar.gz"
+
+src_compile() { :; }
+
+# make install just creates a bunch of empty directories which we need not keep
+src_install() {
+	cd ${S}
+	insinto /usr/share/icons/hicolor
+	doins index.theme
+}
