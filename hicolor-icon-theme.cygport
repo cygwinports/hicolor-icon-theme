@@ -1,12 +1,14 @@
 NAME="hicolor-icon-theme"
-VERSION=0.12
+VERSION=0.15
 RELEASE=1
 CATEGORY="X11"
 SUMMARY="Default fallback icon theme"
 DESCRIPTION="This is the default fallback theme used by implementations of
 the icon theme specification."
-HOMEPAGE="http://icon-theme.freedesktop.org/wiki/HicolorTheme"
-SRC_URI="http://icon-theme.freedesktop.org/releases/${NAME}-${VERSION}.tar.gz"
+HOMEPAGE="https://www.freedesktop.org/wiki/Software/icon-theme/"
+SRC_URI="http://icon-theme.freedesktop.org/releases/${NAME}-${VERSION}.tar.xz"
+
+ARCH=noarch
 
 src_compile() { :; }
 
